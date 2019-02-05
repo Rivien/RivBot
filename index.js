@@ -237,7 +237,8 @@ request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
 	client.on('message', message=> {
     if (message.isMentioned(client.users.get('299168730242351104'))) {
     message.reply('Hey, this is my owner!');
-}
+	}
+}	
 });
 client.login(process.env.BOT_TOKEN);
 
