@@ -223,6 +223,16 @@ request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
 	}
 })
   }
+	
+  if (command === "hug") {
+	    const client = require('nekos.life');
+    const {sfw} = new client();
+     
+    sfw.hug().then(hug => {
+      const attachment = new Discord.Attachment(hug.url);
+      message.channel.send(attachment);
+    })
+  }
 });
 client.login(process.env.BOT_TOKEN);
 
