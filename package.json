@@ -1,0 +1,30 @@
+{
+  "name": "RivBot",
+  "version": "1.0.0",
+  "description": "Epic Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rivien",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "discord.js-musicbot-addon": "^13.4.4",
+    "nekos.life": "^2.0.2",
+    "node-superfetch": "^0.1.9",
+    "opusscript": "0.0.6",
+    "request": "^2.88.0",
+    "snekfetch": "^4.0.4",
+    "superagent": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
