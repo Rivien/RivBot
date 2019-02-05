@@ -230,6 +230,7 @@ request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
      
     sfw.hug().then(hug => {
       const attachment = new Discord.Attachment(hug.url);
+      message.channel.reply(`Hey! ${message.author}! Here is a hug for you`)
       message.channel.send(attachment);
     })
   }
