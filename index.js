@@ -224,7 +224,7 @@ request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
 })
   }
 });
-client.login(config.token);
+client.login(process.env.BOT_TOKEN);
 
 
 
