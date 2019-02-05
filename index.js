@@ -225,7 +225,7 @@ request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
   }
 	
   if (command === "hug") {
-	    const client = require('nekos.life');
+    const client = require('nekos.life');
     const {sfw} = new client();
      
     sfw.hug().then(hug => {
