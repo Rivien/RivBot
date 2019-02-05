@@ -233,12 +233,7 @@ request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
       message.channel.send(`Hey! ${message.author}! Here is a hug for you`);
       message.channel.send(attachment);
     })
-  }
-	client.on('message', message=> {
-    if (message.isMentioned(client.users.get('299168730242351104'))) {
-    message.reply('Hey, this is my owner!');
-	}
-}	
+  }	
 });
 client.login(process.env.BOT_TOKEN);
 
