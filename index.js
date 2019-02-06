@@ -233,7 +233,7 @@ request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
       
       let member = message.mentions.members.first() || message.guild.members.get(args[0]);
       if(!member)
-      return message.reply(`Hey! ${message.author}! Here is a hug for you`);
+      return message.reply(`Hey! ${message.author}! Here is a hug for you!(attachment)`);
 	    
       message.channel.send(attachment);
     })
