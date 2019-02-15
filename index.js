@@ -244,8 +244,17 @@ request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
 
   if (message.channel.nsfw === false) {
     return message.reply(":warning: This channel isn't marked as NSFW.");
-  }
+  } else { 
+	      const client = require('nekos.life');
+    const neko = new client();
+
+    neko.nsfw.neko().then(neko => {
+      const attachment = new Discord.Attachment(neko.url);
+      message.channel.send(attachment);
+    }
 }
+			  
+			  
 });
 client.login(process.env.BOT_TOKEN);
 
