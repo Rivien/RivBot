@@ -199,17 +199,6 @@ client.on("message", async message => {
 }; 
 
 
-  if (command === "lewd") {
-    const client = require('nekos.life');
-    const neko = new client();
-
-    neko.nsfw.neko().then(neko => {
-      const attachment = new Discord.Attachment(neko.url);
-      message.channel.send(attachment);
-    })
-  }
-
-
   if (command === "cat") {
     const request = require('request');
 
@@ -239,7 +228,7 @@ request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
     })
   }
 	
-	if (command === "test-nsfw") {
+	if (command === "lewd") {
     console.log(message.channel.nsfw); // false
   
     if (message.channel.nsfw === false) {
