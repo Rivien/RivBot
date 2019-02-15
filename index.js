@@ -237,7 +237,15 @@ request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
 	    
       message.channel.send(attachment);
     })
-  }	
+  }
+	
+	if (command === "test-nsfw") {
+  console.log(message.channel.nsfw); // false
+
+  if (message.channel.nsfw === false) {
+    return message.reply(":warning: This channel isn't marked as NSFW.");
+  }
+}
 });
 client.login(process.env.BOT_TOKEN);
 
