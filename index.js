@@ -227,12 +227,36 @@ request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
   if (command === "hug") {
     const client = require('nekos.life');
     const {sfw} = new client();
-     
+    const mention = message.mentions[0];
     sfw.hug().then(hug => {
+      
       const attachment = new Discord.Attachment(hug.url);
+      if(mention) {
+        message.channel.reply(`Hey! ${message.author}! Here is a hug for ${mention}`)
+      } else {
+        message.channel.reply(`Hey! ${message.author}! Here is a hug for you`)
+      }
       message.channel.send(attachment);
     })
   }
+  	
+	if (command === "test-nsfw") {
+    console.log(message.channel.nsfw); // false
+  
+    if (message.channel.nsfw === false) {
+      return message.reply(":warning: This channel isn't marked as NSFW.");
+    } else { 
+          const client = require('nekos.life');
+      const neko = new client();
+  
+      neko.nsfw.neko().then(neko => {
+        const attachment = new Discord.Attachment(neko.url);
+        message.channel.send(attachment);
+      })
+    }
+  }
+
+      
 });
 client.login(process.env.BOT_TOKEN);
 
