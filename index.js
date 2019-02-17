@@ -229,7 +229,7 @@ request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
     })
   }
   	
-	if (command === "test-nsfw") {
+	if (command === "lewd") {
     console.log(message.channel.nsfw); // false
   
     if (message.channel.nsfw === false) {
