@@ -174,8 +174,12 @@ client.on("message", async message => {
           value: "Sends Random neko picture"
         },
         {
+          name: "r!cat",
+          value: "Sends random cat picture"
+        },
+        {
           name: "```NSFW Commands```",
-          value: "---"
+          value: "-----------"
         },
         {
           name: "r!lewd",
