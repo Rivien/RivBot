@@ -259,7 +259,7 @@ request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
           const client = require('nekos.life');
       const hentai = new client();
   
-      nsfw.hentai().then(hentai => {
+      hentai.nsfw.hentai().then(hentai => {
         const attachment = new Discord.Attachment(hentai.url);
         message.channel.send(attachment);
       })
