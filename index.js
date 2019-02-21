@@ -266,6 +266,9 @@ request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
     }
   }
 
+  if (command === "mojtata") {
+    message.channel.send("Not found")
+  }
       
 });
 client.login(process.env.BOT_TOKEN);
