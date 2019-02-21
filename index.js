@@ -249,6 +249,23 @@ request.get('http://thecatapi.com/api/images/get?format=src&type=png', {
     }
   }
 
+
+  if (command === "hentai") {
+    console.log(message.channel.nsfw); // false
+  
+    if (message.channel.nsfw === false) {
+      return message.reply(":warning: This channel isn't marked as NSFW.");
+    } else { 
+          const client = require('nekos.life');
+      const hentai = new client();
+  
+      neko.nsfw.hentai().then(hentai => {
+        const attachment = new Discord.Attachment(hentai.url);
+        message.channel.send(attachment);
+      })
+    }
+  }
+
       
 });
 client.login(process.env.BOT_TOKEN);
