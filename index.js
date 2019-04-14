@@ -16,7 +16,7 @@ client.on("guildCreate", guild => {
   client.user.setActivity(`r!help | I am on ${client.guilds.size} servers :D`);
 });
 
-client.on("guildDelete", guild => {.
+client.on("guildDelete", guild => {
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
   client.user.setActivity(`r!help | I am on ${client.guilds.size} servers :D`);
 });
