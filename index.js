@@ -166,6 +166,14 @@ client.on("message", async message => {
           name: "r!lewd",
           value: "Sends random lewd neko picture"
         }
+	{
+          name: "r!hentai",
+          value: "Command says all"
+        }
+        {
+          name: "r!kitsune",
+          value: "Lewd Kitsune Pics"
+        }
         ]
 			}
 		}
