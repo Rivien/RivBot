@@ -143,7 +143,7 @@ client.on("message", async message => {
 					value: "Shows bot ping"
 				},
 				{
-					name: "r!prune (x)",
+					name: "r!purge (x)",
 					value: "Deletes specified amount of messages"
 				},
 				{
